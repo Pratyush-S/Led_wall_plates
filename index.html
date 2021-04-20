@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML><html><head>
+  <title>ESP Input Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+
+  <form action="/get" id="myForm">  
+  Color Picker:  
+   <input type="color" onselect=document.getElementById("myForm").submit() name="universal_color">
+   
+   
+   
+ </form><br>
+
+  <form action="/get">
+    Brightness: <input type="range" name="Brightness" min="1" max="255" value="50" class="slider" id="myRange" value="50">
+  <input type="submit" value="Submit">
+  
+  </form><br>
+  <form action="/get">
+<label for="profile">Choose Color profile:</label>
+
+  <select name="profile" id="profile">
+  <option value="radioactive">Radioactive</option>
+  <option value="pokeball">Pokeball</option>
+  <option value="mercedes">seaborn</option>
+  <option value="solid">Solid</option>
+  </select>
+    <input type="submit" value="Submit">
+  </form><br>
+</body></html>
